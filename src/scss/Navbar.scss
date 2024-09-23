@@ -1,0 +1,32 @@
+@import "import/mixins";
+@import "import/variables";
+
+.header {
+  background-color: var(--blanco);
+  height: 60px;
+  transition: all 0.5s linear;
+
+  @include ajustes(100%, flex, relative);
+  .header_imagen {
+    width: 50%;
+    .logo {
+      width: 60px;
+      opacity: 0;
+
+      transition: all 0.5s linear;
+    }
+    .logo.blanco {
+      opacity: 1;
+    }
+    .logo.negro {
+      opacity: 1;
+    }
+  }
+  .header_theme {
+    align-items: center;
+    height: 100%;
+    right: 0;
+
+    @include ajustes(10%, flex, absolute);
+  }
+}

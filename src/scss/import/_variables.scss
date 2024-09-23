@@ -7,6 +7,8 @@
   --sombra-sec: #ffffff;
   --borde-negro: #00000050;
   --transition: all 0.2s linear;
+  --visible:1
+  --no-visible:0
 }
 
 .dark-mode {
@@ -16,5 +18,8 @@
   --blanco-gris: #232d3f;
   --sombra-ppal: #242424;
   --sombra-sec: #3c3c3c;
+  --visible:0
+  --no-visible:1
+
   --borde-negro: #ffffff50;
-}/*# sourceMappingURL=Tarjetas.css.map */
+}

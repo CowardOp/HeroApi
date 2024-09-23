@@ -1,0 +1,5 @@
+@mixin ajustes($width, $display, $position) {
+  width: $width;
+  display: $display;
+  position: $position;
+}
