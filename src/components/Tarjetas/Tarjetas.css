@@ -1,20 +1,22 @@
 :root {
   --negro: #393939;
   --blanco: #ede8dc;
+  --input: #fefded;
   --rojo: #ff6868;
   --blanco-gris: #f6f5f2;
   --sombra-ppal: #c9c9c9;
   --sombra-sec: #ffffff;
   --borde-negro: #00000050;
-  --transition: all 0.2s linear;
-}
+  --transition: all 0.2s linear; }
 
 .dark-mode {
   --negro: #ede8dc;
   --blanco: #303030;
+  --input: #bed7dc;
   --rojo: #a0153e;
   --blanco-gris: #232d3f;
   --sombra-ppal: #242424;
   --sombra-sec: #3c3c3c;
-  --borde-negro: #ffffff50;
-}/*# sourceMappingURL=Tarjetas.css.map */
+  --borde-negro: #ffffff50; }
+
+/*# sourceMappingURL=Tarjetas.css.map */

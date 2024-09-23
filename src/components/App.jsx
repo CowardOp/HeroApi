@@ -20,7 +20,7 @@ const App = () => {
   return (
     <>
       <Navbar temaOscuro={temaOscuro} cambioTema={handleThemeToggle} />
-      {/* <Api /> */}
+      <Api />
     </>
   );
 };

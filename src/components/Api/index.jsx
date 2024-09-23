@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import Tarjetas from "../Tarjetas";
+// import Tarjetas from "../Tarjetas";
+import Content from "../Content";
+import "./Api.css";
 
 const transformarObjeto = (objeto) => {
   return Object.entries(objeto).map(
@@ -43,15 +45,15 @@ const Api = () => {
     fetchData(11);
   }, []);
   return (
-    <>
-      <Tarjetas
-        id={hero.id}
-        gender={hero.genero}
-        image={hero.imagen}
-        name={hero.nombre}
+    <div className="contenedor">
+      <Content
         estadisticas={hero.estadisticas}
+        genero={hero.genero}
+        id={hero.id}
+        nombre={hero.nombre}
+        imagen={hero.imagen}
       />
-    </>
+    </div>
   );
 };
 
