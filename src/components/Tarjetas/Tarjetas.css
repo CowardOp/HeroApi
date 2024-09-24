@@ -3,20 +3,101 @@
   --blanco: #ede8dc;
   --input: #fefded;
   --rojo: #ff6868;
+  --salmon: #a0153e;
   --blanco-gris: #f6f5f2;
   --sombra-ppal: #c9c9c9;
   --sombra-sec: #ffffff;
   --borde-negro: #00000050;
-  --transition: all 0.2s linear; }
+  --transition: all 0.2s linear;
+}
 
 .dark-mode {
   --negro: #ede8dc;
   --blanco: #303030;
   --input: #bed7dc;
   --rojo: #a0153e;
+  --salmon: #ff6868;
   --blanco-gris: #232d3f;
   --sombra-ppal: #242424;
   --sombra-sec: #3c3c3c;
-  --borde-negro: #ffffff50; }
+  --borde-negro: #ffffff50;
+}
+
+.contenedor_tarjeta {
+  padding: 35px;
+  width: 100%;
+  background-color: var(--blanco-gris);
+}
+.contenedor_tarjeta .tarjeta {
+  position: relative;
+  width: 250px;
+  height: 450px;
+  color: var(--negro);
+}
+.contenedor_tarjeta .tarjeta .encabezado {
+  padding: 25px 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: var(--rojo);
+  border-radius: 5px;
+}
+.contenedor_tarjeta .tarjeta .encabezado span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5px;
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: var(--blanco-gris);
+  border-radius: 50%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  box-shadow: -1.5px 1.5px 0px 1px var(--negro);
+  z-index: 9999;
+}
+.contenedor_tarjeta .tarjeta .encabezado .contenedor_img {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  /* Color de fondo del contenedor */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.4),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.6);
+}
+.contenedor_tarjeta .tarjeta .encabezado .contenedor_img img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.contenedor_tarjeta .tarjeta .encabezado h2 {
+  font-size: 2rem;
+}
+.contenedor_tarjeta .tarjeta .cuerpo {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  transform: scale(0);
+  background-color: var(--salmon);
+  color: var(--blanco);
+  font-weight: 500;
+  border-radius: 5px;
+  z-index: 4;
+  transition: all 0.5s ease;
+  overflow-y: auto;
+}
+.contenedor_tarjeta .tarjeta .cuerpo .cuerpo::-webkit-scrollbar {
+  width: 0;
+}
+.contenedor_tarjeta .tarjeta:hover .cuerpo {
+  transform: scale(1);
+}
 
 /*# sourceMappingURL=Tarjetas.css.map */
